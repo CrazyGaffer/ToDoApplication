@@ -11,6 +11,10 @@
 		D53E0BEB2B922F46001B416A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53E0BEA2B922F46001B416A /* ContentView.swift */; };
 		D53E0BED2B922F47001B416A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53E0BEC2B922F47001B416A /* Assets.xcassets */; };
 		D53E0BF02B922F47001B416A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53E0BEF2B922F47001B416A /* Preview Assets.xcassets */; };
+		D53E0BF72B922F7D001B416A /* KanbanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53E0BF62B922F7D001B416A /* KanbanView.swift */; };
+		D53E0BFA2B923402001B416A /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = D53E0BF92B923402001B416A /* Algorithms */; };
+		D5BA8AC72B92BC5C00D811C6 /* SheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA8AC62B92BC5C00D811C6 /* SheetContentView.swift */; };
+		D5BA8ACA2B92BCE800D811C6 /* StartTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA8AC92B92BCE800D811C6 /* StartTip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		D53E0BEA2B922F46001B416A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D53E0BEC2B922F47001B416A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D53E0BEF2B922F47001B416A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D53E0BF62B922F7D001B416A /* KanbanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanView.swift; sourceTree = "<group>"; };
+		D53E0BFB2B923971001B416A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D5BA8AC62B92BC5C00D811C6 /* SheetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetContentView.swift; sourceTree = "<group>"; };
+		D5BA8AC92B92BCE800D811C6 /* StartTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53E0BFA2B923402001B416A /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +60,10 @@
 		D53E0BE72B922F46001B416A /* ToDoApplication */ = {
 			isa = PBXGroup;
 			children = (
+				D5BA8AC82B92BC8600D811C6 /* Tips */,
+				D5BA8AC52B92BC4C00D811C6 /* Views */,
+				D53E0BFB2B923971001B416A /* Info.plist */,
 				D53E0BE82B922F46001B416A /* ToDoApplicationApp.swift */,
-				D53E0BEA2B922F46001B416A /* ContentView.swift */,
 				D53E0BEC2B922F47001B416A /* Assets.xcassets */,
 				D53E0BEE2B922F47001B416A /* Preview Content */,
 			);
@@ -65,6 +76,24 @@
 				D53E0BEF2B922F47001B416A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D5BA8AC52B92BC4C00D811C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D53E0BF62B922F7D001B416A /* KanbanView.swift */,
+				D53E0BEA2B922F46001B416A /* ContentView.swift */,
+				D5BA8AC62B92BC5C00D811C6 /* SheetContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5BA8AC82B92BC8600D811C6 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				D5BA8AC92B92BCE800D811C6 /* StartTip.swift */,
+			);
+			path = Tips;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +112,9 @@
 			dependencies = (
 			);
 			name = ToDoApplication;
+			packageProductDependencies = (
+				D53E0BF92B923402001B416A /* Algorithms */,
+			);
 			productName = ToDoApplication;
 			productReference = D53E0BE52B922F46001B416A /* ToDoApplication.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +143,9 @@
 				Base,
 			);
 			mainGroup = D53E0BDC2B922F46001B416A;
+			packageReferences = (
+				D53E0BF82B923402001B416A /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = D53E0BE62B922F46001B416A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5BA8ACA2B92BCE800D811C6 /* StartTip.swift in Sources */,
+				D5BA8AC72B92BC5C00D811C6 /* SheetContentView.swift in Sources */,
+				D53E0BF72B922F7D001B416A /* KanbanView.swift in Sources */,
 				D53E0BEB2B922F46001B416A /* ContentView.swift in Sources */,
 				D53E0BE92B922F46001B416A /* ToDoApplicationApp.swift in Sources */,
 			);
@@ -275,11 +313,13 @@
 				DEVELOPMENT_TEAM = MSVMRHFC7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToDoApplication/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +327,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eventide.ToDoApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,11 +348,13 @@
 				DEVELOPMENT_TEAM = MSVMRHFC7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToDoApplication/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +362,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eventide.ToDoApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,6 +394,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D53E0BF82B923402001B416A /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D53E0BF92B923402001B416A /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D53E0BF82B923402001B416A /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D53E0BDD2B922F46001B416A /* Project object */;
 }

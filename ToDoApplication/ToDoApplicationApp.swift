@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 @main
 struct ToDoApplicationApp: App {
@@ -13,5 +14,9 @@ struct ToDoApplicationApp: App {
         WindowGroup {
             ContentView()
         }
+    }
+    init () {
+        try? Tips.resetDatastore()
+        try? Tips.configure()
     }
 }
